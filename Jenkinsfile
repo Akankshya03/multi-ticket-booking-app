@@ -1,16 +1,21 @@
 pipeline{
     agent any
     stages{
-        stage("checkout"){
+        stage("clone"){
             steps{
-                sh "git clone https://github.com/Akankshya03/multi-ticket-booking-app.git"
+            retry(3){
+               bat "git clone https://github.com/Akankshya03/multi-ticket-booking-app.git"
+               }
             }
         }
+      
         
          stage("package"){
             steps{
-            sh "mvn clean package -DskipTests"
+            bat "mvn clean package -DskipTests"
             }
         }
-    }
- }
+       
+        }
+   
+}
