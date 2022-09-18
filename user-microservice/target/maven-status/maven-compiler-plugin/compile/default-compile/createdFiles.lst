@@ -1,0 +1,7 @@
+com\demo\dto\LoginDto.class
+com\demo\entity\User.class
+com\demo\rest\UserRestController.class
+com\demo\UserMicroserviceApplication.class
+com\demo\dto\UserDto.class
+com\demo\service\UserService.class
+com\demo\repository\UserRepository.class

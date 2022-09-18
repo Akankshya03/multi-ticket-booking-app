@@ -1,0 +1,35 @@
+server:
+  port: 8183
+  
+spring:
+  application:
+   name: hotel-booking-microservice
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: ${DB_PASSWORD:root}
+    url: ${JDBC_URL:jdbc:mariadb://localhost:3306/ticket_booking}
+    username: ${DB_USER:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    '[org.springframework]': warn
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
+      
+# Prometheus
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'        

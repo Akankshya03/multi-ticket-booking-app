@@ -1,0 +1,9 @@
+com\demo\entity\Room.class
+com\demo\repository\RoomRepository.class
+com\demo\repository\HotelBookingRepository.class
+com\demo\repository\HotelRepository.class
+com\demo\entity\HotelBooking.class
+com\demo\entity\Hotel.class
+com\demo\HotelBookingMicroserviceApplication.class
+com\demo\rest\HotelRestController.class
+com\demo\service\HotelService.class

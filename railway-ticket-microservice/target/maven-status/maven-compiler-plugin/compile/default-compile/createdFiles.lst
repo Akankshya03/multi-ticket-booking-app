@@ -1,0 +1,7 @@
+com\demo\rest\TrainRestController.class
+com\demo\service\TrainService.class
+com\demo\entity\Train.class
+com\demo\repository\TrainRepository.class
+com\demo\entity\TrainBooking.class
+com\demo\RailwayTicketMicroserviceApplication.class
+com\demo\repository\TrainBookingRepository.class
